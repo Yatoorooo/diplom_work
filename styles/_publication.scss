@@ -1,0 +1,223 @@
+.conteiner {
+  max-width: calc(1320px + 30px * 2);
+  padding: 0 30px;
+  margin: 0 auto;
+  width: 100%;
+}
+// section header
+.header_more_p {
+  color: #b3b3ba;
+
+  display: grid;
+  row-gap: 18px;
+  grid-template-areas: "info" "logo" "links";
+  @media screen and (min-width: $md) {
+    grid-template-areas: "logo info" "logo links";
+  }
+  &__logo {
+    grid-area: logo;
+  }
+  &__info {
+    grid-area: info;
+  }
+  &__links {
+    grid-area: links;
+  }
+}
+.btn {
+  &-sm {
+    background-color: transparent;
+    border: none;
+    color: $grey_3;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    &.active,
+    &:hover {
+      background-color: #f0145a;
+      border-radius: 8px;
+    }
+  }
+}
+.navbar-toggler.h-toggler {
+  border: none;
+  outline: none;
+  &:hover {
+    border: none;
+    outline: none;
+  }
+}
+.address_item {
+  display: flex;
+  align-items: center;
+  &.location {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &.number_ {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  &:before {
+    position: relative;
+    content: "";
+    height: 6px;
+    width: 6px;
+    background-color: $white;
+    border-radius: 50%;
+    right: 8px;
+    top: 1px;
+  }
+}
+
+.btn_down {
+  background-color: transparent;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  color: $grey_3;
+  &__icon:hover {
+    color: #f0145a;
+  }
+}
+.header_top {
+  display: none;
+
+  @media screen and (max-width: $sm) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background: rgba(245, 245, 250, 0.2);
+    padding: 10px 15px;
+    &__number {
+      color: $grey_3;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+}
+.header_more {
+  &__logo_2 {
+    display: none;
+    @media screen and (max-width: $sm) {
+      display: flex;
+      justify-content: none;
+      text-decoration: none;
+    }
+  }
+}
+@media screen and (max-width: $sm) {
+  .img_logo_header {
+    max-width: 69px;
+    display: flex;
+  }
+}
+@media screen and (max-width: $sm) {
+  .navbar-other {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 169px;
+  }
+}
+
+.txt_p {
+  text-decoration: none;
+  color: $blue;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  &:hover {
+    color: #f0145a;
+    text-decoration: underline;
+  }
+}
+.button {
+  border-radius: 12px;
+  background: var(--grey-separator, #e6e6f0);
+  max-width: 229px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  .btn {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: $blue_smoth;
+    text-align: center;
+    border: none;
+
+    &:hover,
+    &.active {
+      border-radius: 10px;
+
+      background: var(--basic-white, $white);
+    }
+  }
+}
+.img_logo_header_p {
+  width: 100%;
+}
+// section publication
+.h3_p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: $blue;
+ 
+}
+.publication_links{
+  text-decoration: none;
+}
+.p_pub {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $grey_3;
+}
+.h5_p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+  color: $black;
+}
+
+.more_publication {
+  border-bottom: 2px solid #e6e6f0;
+
+  .btn_btm {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: $white;
+    background: var(--active-regular, $blue);
+    box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
+    padding: 18px 30px;
+    border: none;
+    border-radius: 12px;
+
+    &:hover {
+      background-color: transparent;
+      color: $blue;
+      box-shadow: 10px 10px 10px 10px solid $blue;
+    }
+  }
+}
