@@ -92,3 +92,27 @@ padding: 15px 30px;
 
     }
 }
+.contact_title{
+    display: grid;
+   grid-template-areas: "contact_info contact_reg"  ;
+   grid-template-columns: (2, 1fr);
+   gap: 80px;
+  padding-bottom: 250px;
+  padding-top: 66px;
+ 
+ @media screen and ( max-width: $md){
+ grid-template-areas: "contact_info" "contact_reg";
+ gap: 40px;
+ padding-bottom: 40px;
+ padding-top: 5px;
+
+ }
+}
+.header_contact{
+   
+}
+@media screen and (max-width: $md){
+    .header_contact{
+        padding-bottom: 10px;
+    }
+}

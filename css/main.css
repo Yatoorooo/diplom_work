@@ -1086,3 +1086,26 @@ body {
   width: 100%;
   padding: 15px 30px;
 }
+
+.contact_title {
+  display: grid;
+  grid-template-areas: "contact_info contact_reg";
+  grid-template-columns: 2, 1fr;
+  gap: 80px;
+  padding-bottom: 250px;
+  padding-top: 66px;
+}
+@media screen and (max-width: 769px) {
+  .contact_title {
+    grid-template-areas: "contact_info" "contact_reg";
+    gap: 40px;
+    padding-bottom: 40px;
+    padding-top: 5px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .header_contact {
+    padding-bottom: 10px;
+  }
+}
