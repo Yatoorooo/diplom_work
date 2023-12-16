@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+    <div class="page_contact">
+        <header class="main__header pt-3 pb-5">
+            <div class="header_top">
+              <div class="header_top__info">
+                <button class="btn-sm">Ук</button>
+                <button class="btn-sm">Ру</button>
+                <button class="btn-sm active">En</button>
+              </div>
+              <div class="header_top__number">
+                <p class="mb-0 number_p">0800 211 927</p>
+              </div>
+            </div>
+            <nav class="navbar navbar-dark navbar-expand-sm">
+              <div class="conteiner">
+                <div class="header_more_p w-100">
+                  <div
+                    class="header_more__logo d-flex align-items-center justify-content-between">
+                    <div class="navbar-other">
+                      <a class="navbar-brand" href="#">
+                        <object
+                          class="img_logo_header_p"
+                          data="./svg_public/Logo_header.svg "
+                          type=""
+                        ></object>
+                        <a class="header_more__logo_2"> </a>
+                      </a>
+                    </div>
+    
+                    <button
+                      class="navbar-toggler h-toggler"
+                      type="button"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasDarkNavbar"
+                      aria-controls="offcanvasDarkNavbar"
+                      aria-label="Toggle navigation"
+                    >
+                      <object data="./svg_public/Hamburger.svg" type=""></object>
+                    </button>
+                  </div>
+                  <div
+                    class="header_more__info d-none d-sm-flex gap-3 align-items-center justify-content-md-end justify-content-start"
+                  >
+                    <div class="btn_lang d-flex gap-3 align-items-center">
+                      <button class="btn-sm">Ук</button>
+                      <button class="btn-sm">Ру</button>
+                      <button class="btn-sm active">En</button>
+                    </div>
+                    <address class="d-flex align-items-center m-0 gap-3">
+                      <p class="address_item mb-0 location">
+                        Kyiv, Mechnikova str, 14/1
+                      </p>
+                      <p class="address_item mb-0 number">0800 211 927</p>
+                      <a class="address_item" href="">
+                        <object
+                          class="img"
+                          data="../svg_public/Facebook-Header.svg"
+                          type=""
+                        ></object>
+                      </a>
+                    </address>
+                  </div>
+                  <div
+                    class="offcanvas offcanvas-end text-bg-dark header_more__links"
+                    tabindex="-1"
+                    id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel"
+                  >
+                    <div class="offcanvas-header">
+                      <button
+                        type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div
+                      class="offcanvas-body align-items-center justify-content-md-end justify-content-start"
+                    >
+                      <nav>
+                        <ul class="d-flex gap-3 flex-sm-row flex-column">
+                          <li class="item">
+                            <a class="txt_p" href="./index.html">About us</a>
+                          </li>
+                          <li class="item">
+                            <a class="txt_p" href="">Services</a>
+                          </li>
+                          <li class="item"><a class="txt_p" href="">Team</a></li>
+                          <li class="item">
+                            <a class="txt_p" href="./publication.html">Publications</a>
+                          </li>
+                          <li class="item"><a class="txt_p" href="./contact_page.html">Contact</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </header>
+          <main class="main_contact pb-5">
+            <div class="conteiner_entry">
+                <div class="contact_title d-flex justify-content-between">
+                    <div class="contact_info d-flex flex-column justify-content-start gap-4">
+                        <h3 class="h3 h3_soc">Kyiv, </br> Mechnikova str, 14</h2>
+                        <div class="contact_social pt-3 pb-3">
+                        <p class="number">0800 211 927</p>
+                        <a class="contact_link" href=""><p class="contact">contact@forstudy.space</p></a>
+                        </div>
+                        <div class="social_facebook d-flex align-items-center gap-2">
+                            <a href=""><object data="./svg_icons/Facebook-Footer.svg" type=""></object></a>
+                            <a class="button_contact" href=""><p class="p p_fb">Our page </br>on facebook</p></a>
+                        </div>
+                    </div>
+                    <div class="contact_reg d-flex flex-column gap-3">
+                        <h1 class="h2 h2_contact">We would like to help you</h1>
+                        <input class="area p-2 ps-3"  type="text" value="Name">
+                        <input  class="area pb-5 pt-3 ps-3" type="text" value="Message">
+                        <p class="p p_contact pt-4 pb-2">How to answer you?</p>
+                        <input  class="area p-2 ps-3" type="phone" value="Phone number">
+                        <input  class="area p-2 ps-3 text-start" type="email" value="Email">
+                        <a class="button_contact" href=""><button class="btn_contact">Send message</button></a>
+                    </div>
+                </div>
+            </div>
+          </main>
+          <footer class="footer">
+            <div class="conteiner">
+              <div class="footer_content row pt-4">
+                <div class="footer_links col-12 col-sm-6 col-lg-6">
+                  <div class="loc_footer d-flex align-items-center gap-3 pb-4">
+                    <p class="address_item mb-0 location">
+                      Kyiv, Mechnikova str, 14/1
+                    </p>
+                    <a class="link_f" href="">on map</a>
+                  </div>
+                  <div class="social_link d-flex gap-3 align-items-center">
+                    <a href=""
+                      ><object
+                        data="./svg_icons/Facebook-Footer.svg"
+                        type=""
+                      ></object
+                    ></a>
+                    <p class="address_item mb-0 number">0800 211 927</p>
+                    <a class="link_f" href="">contact@forstudy.space</a>
+                  </div>
+                </div>
+                <div
+                  class="footer_info col-12 col-sm-6 col-lg-6 d-flex justify-content-end"
+                >
+                  <p class="p_f">© 2021 HLEGAL Law company, LLC</p>
+                </div>
+              </div>
+            </div>
+          </footer>
+    </div>
+    
+</body>
+</html>
